@@ -6,7 +6,7 @@ import Carousel from '../components/Carousel'
 import Tags from '../components/Tags'
 import Host from '../components/Host'
 import Rating from '../components/Rating'
-import Dropdown2 from '../components/Dropdown2'
+import Dropdown from '../components/DropdownHsg'
 import Checklist from '../components/Checklist'
 import Footer from '../layout/Footer'
 
@@ -37,17 +37,17 @@ const Housing = () => {
                                 <p className="housing__infos__location">{housing.location}</p>
                                 <Tags elements={housing.tags} />
                             </div>
-                            <div className="housing__infos__bloc housing__infos__bloc--2">
+                            <div className="housing__infos__bloc housing__infos__bloc--hsg">
                                 <Host host={housing.host} />
                                 <Rating score={housing.rating} />
                             </div>
                         </div>
-                        <div className="housing__dropdowns--2">
-                            <Dropdown2
+                        <div className="housing__dropdowns--hsg">
+                            <Dropdown
                                 title="Description"
                                 content={housing.description}
                             />
-                            <Dropdown2
+                            <Dropdown
                                 title="Equipements"
                                 content={<Checklist elements={housing.equipments} />}
                             />
