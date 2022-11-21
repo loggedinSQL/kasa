@@ -1,0 +1,53 @@
+/*
+    building the header style
+*/
+
+.header {
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+
+    @include mob {
+        width: 95%;
+    }
+
+    &__logo {
+        width: 210px;
+        height: 68px;
+
+        @include mob {
+            width: 145px;
+            height: 47px;
+        }
+    }
+
+    &__nav {
+        width: 309px;
+        font-size: 24px;
+        display: flex;
+
+        @include tab {
+            width: 225px;
+            font-size: 18px;
+        }
+
+        @include mob {
+            width: 140px;
+            font-size: 12px;
+        }
+        
+        &__homeBtn, &__aboutBtn {
+            width: 50%;
+            color: $color-primary;
+            text-decoration: none;
+            display: flex;
+            justify-content: flex-end;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

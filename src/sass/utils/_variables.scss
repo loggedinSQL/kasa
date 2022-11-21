@@ -1,0 +1,28 @@
+// variables
+
+$color-primary : #FF6060;
+$color-white : #ffffff;
+$color-black : #000000;
+
+$breakpoint: (mob:768px, tab:992px);
+
+
+// mixins
+
+@mixin bac($color) {
+    @if (lightness($color) > 70) {
+        background-color: darken($color, 4);
+    }
+}
+
+@mixin mob {
+    @media screen and (max-width: map-get($breakpoint,mob)) {
+        @content;        
+    }
+}
+
+@mixin tab {
+    @media screen and (max-width: map-get($breakpoint,tab)) {
+        @content;        
+    }
+}

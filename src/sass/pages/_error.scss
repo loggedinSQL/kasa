@@ -1,0 +1,43 @@
+/*
+    building the style of the error page
+*/
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-primary;
+    
+    &__title {
+        font-size: 288px;
+        margin: 20px 0px 0px;
+
+        @include mob {
+            font-size: 96px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    &__subtitle {
+        height: 182px;
+        font-size: 36px;
+        margin: 0px;
+
+        @include mob {
+            width: 89%;
+            height: 133px;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    
+    &__homeBtn {
+        font-size: 18px;
+        color: $color-primary;
+
+        @include mob {
+            font-size: 14px;
+        }
+    }
+}
+

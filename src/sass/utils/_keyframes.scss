@@ -1,0 +1,8 @@
+/*
+    Build keyframes
+*/
+
+@keyframes turn {
+    0% { transform: rotate(0turn); }
+    100% { transform: rotate(0.5turn); }
+}

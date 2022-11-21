@@ -1,0 +1,33 @@
+/*
+    building the footer style
+*/
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    background-color: $color-black;
+    padding: 29px 0px;
+    margin-top: 40px;
+
+    @include mob {
+        width: 95%;
+        margin-top: 20px;
+    }
+    
+    &__logo {
+        width: 122px;
+        margin-top: 30px;
+    }
+    
+    &__text {
+        font-size: 24px;
+        color: $color-white;
+        
+        @include mob {
+            font-size: 12px;
+        }
+    }
+}

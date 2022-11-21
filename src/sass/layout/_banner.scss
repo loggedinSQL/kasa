@@ -1,0 +1,67 @@
+/*
+    building the banner style
+*/
+
+.banner {
+    width: 86%;
+    height: 223px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 43px;
+    z-index: 0;
+
+    @include mob {
+        width: 95%;
+        height: 111px;
+        margin-top: 22px;
+    }
+
+    &::after {
+        content: "";
+        width: 85%;
+        height: 223px;
+        border-radius: 25px;
+        display: flex;
+        background: $color-black;
+        mix-blend-mode: darken;
+        position: absolute;
+        top: 23;
+        opacity: 0.3;
+        z-index: 2;
+
+        @include mob {
+            width: 92.5%;
+            height: 111px;
+            border-radius: 10px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        display: flex;
+        object-fit: cover;
+        border-radius: 25px;
+
+        @include mob {
+            border-radius: 10px;
+        }
+    }
+
+    &__title {
+        font-size: 48px;
+        padding: 0px 20px;
+        color: $color-white;
+        align-self: center;
+        position: absolute;
+        z-index: 4;
+
+        @include tab {
+            font-size: 36px;
+        }
+
+        @include mob {
+            font-size: 24px;
+        }
+    }
+}
