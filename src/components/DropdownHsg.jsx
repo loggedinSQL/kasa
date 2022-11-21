@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import chevron from '../assets/vector.svg'
 
-const Dropdown2 = ({ title, content }) => {
+const Dropdown = ({ title, content }) => {
     const [isOpen, setIsOpen] = useState(false)
 
     return isOpen ? (
@@ -43,4 +43,4 @@ const Dropdown2 = ({ title, content }) => {
     )
 }
 
-export default Dropdown2
+export default Dropdown
