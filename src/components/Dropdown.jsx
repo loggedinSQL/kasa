@@ -18,7 +18,7 @@ const Dropdown = ({ title, content }) => {
                     }
                 />
             </div>
-            <div className="dropdown__content--close">
+            <div className="dropdown__content">
                 <div className="dropdown__content__text">{content}</div>
             </div>
         </div>
@@ -35,9 +35,6 @@ const Dropdown = ({ title, content }) => {
                             : 'dropdown__header__chevron'
                     }
                 />
-            </div>
-            <div className="dropdown__content">
-                <div className="dropdown__content__text">{content}</div>
             </div>
         </div>
     )
