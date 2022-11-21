@@ -402,7 +402,7 @@ ul li {
     font-size: 12px;
   }
 }
-.dropdown-2 {
+.dropdown-hsg {
   width: 47%;
   height: 300px;
   display: flex;
@@ -411,12 +411,12 @@ ul li {
   margin-top: 20px;
 }
 @media screen and (max-width: 992px) {
-  .dropdown-2 {
+  .dropdown-hsg {
     width: 100%;
     height: auto;
   }
 }
-.dropdown-2__header {
+.dropdown-hsg__header {
   width: 100%;
   height: 47px;
   display: flex;
@@ -427,35 +427,35 @@ ul li {
   color: #ffffff;
   align-self: start;
 }
-.dropdown-2__header__title {
+.dropdown-hsg__header__title {
   font-size: 18px;
   font-weight: 500;
   margin-left: 20px;
 }
 @media screen and (max-width: 768px) {
-  .dropdown-2__header__title {
+  .dropdown-hsg__header__title {
     font-size: 13px;
   }
 }
-.dropdown-2__header__chevron {
+.dropdown-hsg__header__chevron {
   width: 16px;
   height: 16px;
   margin-right: 20px;
 }
-.dropdown-2__header__chevron--isOpen {
+.dropdown-hsg__header__chevron--isOpen {
   animation: turn 200ms linear forwards;
 }
-.dropdown-2__content {
+.dropdown-hsg__content {
   width: 100%;
   height: 255px;
   background-color: whitesmoke;
 }
 @media screen and (max-width: 992px) {
-  .dropdown-2__content {
+  .dropdown-hsg__content {
     height: auto;
   }
 }
-.dropdown-2__content__text {
+.dropdown-hsg__content__text {
   font-size: 18px;
   font-weight: 400;
   color: #FF6060;
@@ -464,7 +464,7 @@ ul li {
   margin-top: 0px;
 }
 @media screen and (max-width: 768px) {
-  .dropdown-2__content__text {
+  .dropdown-hsg__content__text {
     font-size: 12px;
   }
 }
@@ -493,7 +493,7 @@ ul li {
   }
 }
 @media screen and (max-width: 992px) {
-  .housing__infos__bloc--2 {
+  .housing__infos__bloc--hsg {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -537,12 +537,12 @@ ul li {
   display: flex;
   justify-content: space-between;
 }
-.housing__dropdowns--2 {
+.housing__dropdowns--hsg {
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 992px) {
-  .housing__dropdowns--2 {
+  .housing__dropdowns--hsg {
     height: auto;
     margin-top: 20px;
     flex-direction: column;
