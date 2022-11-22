@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react' // importer le composant useState de React
 import chevron from '../assets/vector.svg'
 
 const Dropdown = ({ title, content }) => {
