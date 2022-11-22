@@ -1,4 +1,4 @@
-const Host = ({ host }) => {
+const Host = ({ host }) => { // configuration du composant "Host"
     return (
         <ul className="host">
             <li className="host__name">{host.name}</li>
