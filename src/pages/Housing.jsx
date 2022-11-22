@@ -22,7 +22,7 @@ const Housing = () => {
     useEffect(() => {
         const housing = housings.find(item => item.id === id) // vérifier si l'id de l'url et l'id du logement correspondent
         setHousing(housing)
-        setIsLoaded(true)
+        setIsLoaded(true) // si les id correspondent on peut charger la page 
     }, [id])
 
     if (isLoaded === true) {
