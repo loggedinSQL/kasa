@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom' // importation du composant useParams
 import { useEffect, useState } from 'react'
 
 import Header from '../layout/Header'
@@ -14,12 +14,13 @@ import housings from '../datas/housings.json'
 import '../css/style.css'
 
 const Housing = () => {
-    const { id } = useParams()
+    const { id } = useParams() // récupération de l'id du logement présent dans les paramètres de l'url
+
     const [housing, setHousing] = useState()
     const [isLoaded, setIsLoaded] = useState(false)
 
     useEffect(() => {
-        const housing = housings.find(item => item.id === id)
+        const housing = housings.find(item => item.id === id) // vérifier si l'id de l'url et l'id du logement correspondent
         setHousing(housing)
         setIsLoaded(true)
     }, [id])

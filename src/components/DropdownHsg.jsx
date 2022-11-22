@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import chevron from '../assets/vector.svg'
 
 const Dropdown = ({ title, content }) => {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false) // on vérifie l'état du composant dropdown
 
-    return isOpen ? (
+    return isOpen ? ( 
         <div className="dropdown-hsg">
             <div
                 className="dropdown-hsg__header"
