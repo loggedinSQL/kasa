@@ -8,7 +8,7 @@ const Carousel = (props) => {
     let currentImg = pictures[currentPosition]
     const showControls = pictures.length > 1 ? true : false
 
-    function clickToSwipe(direction) {
+    const clickToSwipe = (direction) => {
         lastPosition = currentPosition
 
         if (direction === 'previous') {
