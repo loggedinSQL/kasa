@@ -30,8 +30,12 @@
         opacity: 0.3;
         z-index: 2;
 
+        @include tab {
+            width: 84%;
+        }
+
         @include mob {
-            width: 92.5%;
+            width: 92%;
             height: 111px;
             border-radius: 10px;
         }
