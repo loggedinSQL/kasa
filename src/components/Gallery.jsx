@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom' // importer le composant Link pour naviguer entre les pages
 import housings from '../datas/housings.json'
 
-const Gallery = () => {
+const Gallery = () => { // configuration de la galerie de logements
     return (
         <section className="gallery">
             {housings.map((housing) => (
